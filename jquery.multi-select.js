@@ -96,7 +96,7 @@
 
             $select[0].selectedIndex = 1;
             
-            $select.next('.' + this.options.listClass).children().filter(':not(.' + this.options.placeholderClass + ')').remove();
+            $select.next('.' + this.options.listClass).children().filter(':not([hidden]').remove();
             
             if (!silent) {
                 $select.trigger('change');
@@ -120,7 +120,7 @@
                 
                 $select[0].selectedIndex = 1;
                 
-                $select.next('.' + self.options.listClass).children().filter(':not(.' + self.options.placeholderClass + ')').remove();
+                $select.next('.' + self.options.listClass).children().filter(':not([hidden])').remove();
                 
                 $select.trigger('multi-select-change');
             });
@@ -208,8 +208,7 @@
         selectClass: 'multi-select',
         listClass: 'multi-select-list',
         template: '<li><span class="multi-select-remove" title="Remove">&times;</span><input type="hidden" name="{{field}}" value="{{value}}">{{text}}</li>',
-        removeClass: 'multi-select-remove',
-        placeholderClass: 'msw2-list-placeholder'
+        removeClass: 'multi-select-remove'
     };
 
     $.fn.multiSelect.Constructor = MultiSelectObject;

@@ -18,7 +18,7 @@ This plugin creates a multi select function for a select box.
             <option value="5">Option 5</option>
         </select>
         <ul class="multi-select-list">
-            <li class="msw2-list-placeholder" hidden></li>
+            <li hidden></li>
         </ul>
     </div>
 
@@ -34,7 +34,7 @@ This plugin creates a multi select function for a select box.
             <option value="5">Option 5</option>
         </select>
         <ul class="multi-select-list">
-            <li class="msw2-list-placeholder" hidden></li>
+            <li hidden></li>
             <li><span class="multi-select-remove" title="Remove">&times;</span><input type="hidden" name="field2[]" value="1">Option 1</li>
             <li><span class="multi-select-remove" title="Remove">&times;</span><input type="hidden" name="field2[]" value="2">Option 2</li>
         </ul>
