@@ -1,0 +1,22 @@
+.multi-select-remove {
+    font-size: 20px;
+    line-height: 1;
+    padding: 2px 4px;
+}
+.msw2-list-placeholder {
+    display: none;
+}
+.multi-select-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.multi-select-list li {
+    background: #efefef;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 14px 12px 11px;
+}
+.multi-select-list li + li {
+    margin-top: 2px;
+}
