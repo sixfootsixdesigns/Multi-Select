@@ -96,7 +96,7 @@
 
             $select[0].selectedIndex = 1;
             
-            $select.next('.' + this.options.listClass).children().filter(':not([hidden]').remove();
+            $select.next('.' + this.options.listClass).children().filter(':not([hidden])').remove();
             
             if (!silent) {
                 $select.trigger('change');
